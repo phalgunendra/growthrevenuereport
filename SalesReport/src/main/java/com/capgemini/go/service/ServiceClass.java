@@ -17,7 +17,6 @@ public class ServiceClass implements ServiceInterface {
 	@Autowired
 	DaoInterface daoobj;
 
-	//To convert date format from yyyy-mm-dd to dd-mmm-yyyy
 	String dateformat(String s) {
 		String months = new DateFormatSymbols().getMonths()[Integer.parseInt(s.substring(5, 7)) - 1];
 		String cdate = s.subSequence(8, 10) + "-" + months.substring(0, 3) + "-" + s.substring(0, 4);

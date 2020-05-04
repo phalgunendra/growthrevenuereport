@@ -21,7 +21,6 @@ public class ControllerClass {
 	@Autowired
 	ServiceInterface serviceobj;
 
-	// Get SalesReports
 	@GetMapping("/SalesReport/{date1}/{date2}/{userid}/{category}")
 	private ResponseEntity<List<RevenueTable>> viewSalesReportByUserAndCategory(@PathVariable("date1") String entry,
 			@PathVariable("date2") String exit, @PathVariable("userid") String targetUserId,
