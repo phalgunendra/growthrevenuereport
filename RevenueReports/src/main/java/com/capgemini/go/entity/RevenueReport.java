@@ -47,5 +47,10 @@ public class RevenueReport {
 		this.colorcode = colorcode;
 	}
 	
+	public RevenueReport() {
+		super();
+	}
+
+
     
 }
